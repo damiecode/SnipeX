@@ -14,18 +14,18 @@ This is a game created using Phaser JS and JavaScript. It is a role playing game
 # Game Development steps
 ## Add dependencies
  - In your terminal run ```npm init -y``` to generate the package.json file.
- - Run ```npm add --dev webpack webpack-cli webpack-dev-server``` to add webpack dependencies.
- - Run ```npm add copy-webpack-plugin``` 
+ - Run ```npm install --dev webpack webpack-cli webpack-dev-server``` to add webpack dependencies.
+ - Run ```npm install copy-webpack-plugin``` 
  - Make sure to create a gitignore file and add the node_modules to avoid so many files when pushing.
- - Next  ```npm add -D babel-loader babel-core babel-present-env``` for transpiling the code.
- - Lastly ```npm add phaser``` to get phaser in our project.
+ - Next  ```npm install -D babel-loader babel-core @babel/preset-env``` for transpiling the code.
+ - Lastly ```npm install phaser``` to get phaser in our project.
 <br>
 
 ## Configuring webpack with babel
 - Create a webpack.config.js file and add the following configuration
-  ```const path = require("path");
-     const CopyWebpackPlugin = require("copy-webpack-plugin");
-     const webpack = require("webpack");
+  ``` const path = require("path");
+      const CopyWebpackPlugin = require("copy-webpack-plugin");
+      const webpack = require("webpack");
 
       module.exports = {
         entry: {
@@ -35,9 +35,13 @@ This is a game created using Phaser JS and JavaScript. It is a role playing game
 
         output: {
           path: path.resolve(__dirname, "build"),
-          filename: "app.bundle.js"
+          filename: "[name].js"
         },
-
+        optimization: {
+          splitChunks: {
+            chunks: "all"
+          }
+        },
         module: {
           rules: [
             {
@@ -67,17 +71,13 @@ This is a game created using Phaser JS and JavaScript. It is a role playing game
           new webpack.DefinePlugin({
             "typeof CANVAS_RENDERER": JSON.stringify(true),
             "typeof WEBGL_RENDERER": JSON.stringify(true)
-          }),
-          new webpack.optimize.CommonsChunkPlugin({
-          name: "production-dependencies",
-          filename: "production-dependencies.bundle.js"
-        })
-      ],
+          })
+        ],
 
-      devServer: {
-        contentBase: path.resolve(__dirname, "build")
-      }
-    };```
+        devServer: {
+          contentBase: path.resolve(__dirname, "build")
+        }
+      };```
 - Note: We are adding two javaScript files so we can budle the phaser separately from the main javaScript code. This is to avoid phaser from reloading all the time when we update our logics.
 - Lastly in configuration, Create an html file and link the JS files to the html.
 <br>
