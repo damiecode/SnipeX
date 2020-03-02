@@ -1,0 +1,32 @@
+{
+  "name": "snipeX",
+  "version": "1.0.0",
+  "description": "This is a game created using Phaser JS and JavaScript. It is a role playing game. <h1 align=\"center\">Welcome to SnipeX 👋</h1> <br>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damiecode/SnipeX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damiecode/SnipeX/issues"
+  },
+  "homepage": "https://github.com/damiecode/SnipeX#readme",
+  "dependencies": {
+    "phaser": "^3.22.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^5.1.1"
+  }
+}
