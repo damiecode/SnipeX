@@ -12,6 +12,13 @@ This is a game created using Phaser JS and JavaScript. It is a role playing game
 <br>
 
 # Game Development steps
+## Game Requirements
+- Intermediate level of JavaScript
+- Code editor
+- Web browser
+- Local web server
+- Assets – map in JSON format and images (you can use the ones coming with this tutorial files)
+
 ## Add dependencies
  - In your terminal run ```npm init -y``` to generate the package.json file.
  - Run ```npm install --dev webpack webpack-cli webpack-dev-server``` to add webpack dependencies.
@@ -82,6 +89,73 @@ This is a game created using Phaser JS and JavaScript. It is a role playing game
 - Lastly in configuration, Create an html file and link the JS files to the html.
 <br>
 
+## RPG Game
+  - Add boot scene and game scene file as well as the config.
+  ```config.js, bootScene.js, gameScene.js```
+  <br>
+      ```const config = {
+          `type: Phaser.AUTO,
+          parent: 'content',
+          width: 320,
+          height: 240,
+          zoom: 2,
+          pixelArt: true,
+          physics: {
+              default: 'arcade',
+              arcade: {
+                  gravity: { y: 0 }
+              }
+          },
+          scene: [
+              BootScene,
+              GameScene
+          ]`
+        };
+
+      const BootScene = new Phaser.Class({
+  
+        Extends: Phaser.Scene,
+
+        initialize:
+
+        function BootScene ()
+        {
+            Phaser.Scene.call(this, { key: 'BootScene' });
+        },
+
+        preload: function ()
+        {
+            // load the resources here
+        },
+
+        create: function ()
+        {
+            this.scene.start('GameScene');
+        }
+      });
+      
+      const GameScene = new Phaser.Class({
+ 
+        Extends: Phaser.Scene,
+
+        initialize:
+
+        function gameScene ()
+        {
+            Phaser.Scene.call(this, { key: 'GameScene' });
+        },
+        preload: function ()
+        {
+            
+        },
+        create: function ()
+        {
+            // create your world here
+        }
+      });
+    ```
+
+<br>
 This project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ 'The Global School for Remote Software Developers!').
 
 SnipeX is created using vanilla JS and Phaser Js, connects to Open-weather and Ipfind APIs, and dynamically renders weather data -in Metric and Imperial units- for clients city or other cities chosen with the search form.
