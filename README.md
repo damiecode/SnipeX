@@ -93,24 +93,25 @@ This is a game created using Phaser JS and JavaScript. It is a role playing game
   - Add boot scene and game scene file as well as the config.
   ```config.js, bootScene.js, gameScene.js```
   <br>
-      ```const config = {
-          `type: Phaser.AUTO,
-          parent: 'content',
-          width: 320,
-          height: 240,
-          zoom: 2,
-          pixelArt: true,
-          physics: {
-              default: 'arcade',
-              arcade: {
-                  gravity: { y: 0 }
-              }
-          },
-          scene: [
-              BootScene,
-              GameScene
-          ]`
-        };
+  ```
+      const config = {
+        `type: Phaser.AUTO,
+        parent: 'content',
+        width: 320,
+        height: 240,
+        zoom: 2,
+        pixelArt: true,
+        physics: {
+            default: 'arcade',
+            arcade: {
+                gravity: { y: 0 }
+            }
+        },
+        scene: [
+            BootScene,
+            GameScene
+        ]`
+      };
 
       const BootScene = new Phaser.Class({
   
