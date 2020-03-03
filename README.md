@@ -1,6 +1,5 @@
 <h1 align="center">Welcome to SnipeX 👋</h1>
 <br>
-
 <p>
   <a href="https://rawcdn.githack.com/damiecode/Weather-App/feature/weatherApp/dist/index.html" target="_blank">
     <img alt="Website" src="weather.png" />
@@ -65,10 +64,6 @@
         plugins: [
           new CopyWebpackPlugin([
             {
-              from: path.resolve(__dirname, "index.html"),
-              to: path.resolve(__dirname, "build")
-            },
-            {
               from: path.resolve(__dirname, "assets", "**", "*"),
               to: path.resolve(__dirname, "build")
             }
@@ -121,7 +116,6 @@
     };
 
     const game = new Phaser.Game(config);
-    <br> 
 
       const BootScene = new Phaser.Class({
   
