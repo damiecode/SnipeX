@@ -1,5 +1,3 @@
-# SnipeX
-This is a game created using Phaser JS and JavaScript. It is a role playing game.
 <h1 align="center">Welcome to SnipeX 👋</h1>
 <br>
 
@@ -91,27 +89,39 @@ This is a game created using Phaser JS and JavaScript. It is a role playing game
 
 ## RPG Game
   - Add boot scene and game scene file as well as the config.
-  ```config.js, bootScene.js, gameScene.js```
+  ```index.js, bootScene.js, gameScene.js```
   <br>
   ```
-      const config = {
-        `type: Phaser.AUTO,
-        parent: 'content',
-        width: 320,
-        height: 240,
-        zoom: 2,
-        pixelArt: true,
-        physics: {
-            default: 'arcade',
-            arcade: {
-                gravity: { y: 0 }
+       
+  import 'phaser';
+  import BootScene from './scenes/bootScene';
+  import GameScene from './scenes/gameScene';
+
+  const config = {
+      type: Phaser.WEBGL,
+      pixelArt: true,
+      roundPixels: true,
+      parent: 'content',
+      width: 400,
+      height: 240,
+      physics: {
+          default: 'arcade',
+          arcade: {
+              gravity: {
+                  y: 800
+            },
+            debug: false
             }
         },
         scene: [
             BootScene,
+            TitleScene,
             GameScene
-        ]`
-      };
+        ]
+    };
+
+    const game = new Phaser.Game(config);
+    <br> 
 
       const BootScene = new Phaser.Class({
   
@@ -154,7 +164,7 @@ This is a game created using Phaser JS and JavaScript. It is a role playing game
             // create your world here
         }
       });
-    ```
+  ```
 
 <br>
 This project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ 'The Global School for Remote Software Developers!').
