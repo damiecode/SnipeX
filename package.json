@@ -22,8 +22,7 @@
   "homepage": "https://github.com/damiecode/SnipeX#readme",
   "dependencies": {
     "@babel/core": "^7.8.6",
-    "foo": "0.0.7",
-    "phaser": "^3.22.0"
+    "foo": "0.0.7"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.8.6",
@@ -34,6 +33,7 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
+    "phaser": "^3.22.0",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
