@@ -13,9 +13,7 @@ module.exports = {
     filename: "[name].js"
   },
   optimization: {
-    splitChunks: {
-      chunks: "all"
-    }
+    minimize: true
   },
   module: {
     rules: [
