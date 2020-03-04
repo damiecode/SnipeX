@@ -1,10 +1,10 @@
 <h1 align="center">Welcome to SnipeX 👋</h1>
 <br>
-<p>
+<!-- <p>
   <a href="https://rawcdn.githack.com/damiecode/SnipeX/feature/weatherApp/dist/index.html" target="_blank">
     <img alt="Website" src="weather.png" />
   </a>
-</p>
+</p> -->
 
 <br>
 This project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ 'The Global School for Remote Software Developers!').
@@ -21,7 +21,7 @@ The full project requirements can be found [here](https://www.notion.so/RPG-game
 - npm
 - webpack
 
-### ✨ [Live Demo](https://rawcdn.githack.com/damiecode/SnipeX/feature/weatherApp/dist/index.html)
+### ✨ [Live Demo](https://powerful-earth-04908.herokuapp.com/)
 
 ## Usage
 
