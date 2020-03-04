@@ -60,9 +60,9 @@ function update() {
       gameState.player.setVelocityX(0);
     }
 
-    if (Phaser.Input.Keyboard.JustDown(gameState.cursors.space)) {
-        
-    }
+    // if (Phaser.Input.Keyboard.JustDown(gameState.cursors.space)) {
+
+    // }
   }
 }
 
