@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/damiecode/SnipeX#readme",
   "dependencies": {
+    "foo": "0.0.7",
     "phaser": "^3.22.0"
   },
   "devDependencies": {

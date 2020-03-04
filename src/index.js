@@ -24,7 +24,7 @@ function create() {
   });
   const platforms = this.physics.add.staticGroup();
   platforms
-    .create(225, 490, 'platform')
+    .create(225, 750, 'platform')
     .setScale(1, 0.3)
     .refreshBody();
   gameState.scoreText = this.add.text(175, 482, 'Bugs Left: 24', {
@@ -68,8 +68,8 @@ function update() {
 
 const config = {
   type: Phaser.AUTO,
-  width: 450,
-  height: 500,
+  width: 1000,
+  height: 700,
   backgroundColor: '19ade9',
   physics: {
     default: 'arcade',

@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to SnipeX 👋</h1>
 <br>
 <p>
-  <a href="https://rawcdn.githack.com/damiecode/Weather-App/feature/weatherApp/dist/index.html" target="_blank">
+  <a href="https://rawcdn.githack.com/damiecode/SnipeX/feature/weatherApp/dist/index.html" target="_blank">
     <img alt="Website" src="weather.png" />
   </a>
 </p>
@@ -11,30 +11,30 @@ This project is part of a series of projects to be completed by students of [Mic
 
 SnipeX is created using vanilla JS and Phaser Js. It is a simple Video game.
 
-The full project requirements can be found [here](https://www.theodinproject.com/courses/javascript/lessons/weather-app).
+The full project requirements can be found [here](https://www.notion.so/RPG-game-f94a617841e240a293c0b6928beebe89).
 
 ## Built With
 
 - JavaScript (ES6)
 - HMTL
-- CSS
+- PHASER JS
 - npm
 - webpack
 
-### ✨ [Live Demo](https://rawcdn.githack.com/damiecode/Weather-App/feature/weatherApp/dist/index.html)
+### ✨ [Live Demo](https://rawcdn.githack.com/damiecode/SnipeX/feature/weatherApp/dist/index.html)
 
 ## Usage
 
 > Clone the repository to your local machine
 
 ```sh
-$ git clone https://github.com/damiecode/Weather-App.git
+$ git clone https://github.com/damiecode/SnipeX.git
 ```
 
 > cd into the directory, install dependencies, build and start
 
 ```sh
-$ cd todo-list
+$ cd SnipeX
 $ npm install
 $ npm run build
 $ npm run start
@@ -51,9 +51,9 @@ $ npm run start
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/damiecode/Weather-App/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/damiecode/SnipeX/issues).
 
-1. Fork it (https://github.com/damiecode/Weather-App/fork)
+1. Fork it (https://github.com/damiecode/SnipeX/fork)
 2. Create your working branch (git checkout -b [choose-a-name])
 3. Commit your changes (git commit -am 'what this commit will fix/add/improve')
 4. Push to the branch (git push origin [chosen-name])
